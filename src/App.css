@@ -28,6 +28,14 @@
   width: 800px;
 }
 
+.center-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
 .random {
   align-self: center;
   padding: 20px;
@@ -52,4 +60,31 @@ h3 {
 .small {
   text-align: center;
   padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;
+  }
+
+  .card {
+    width: 200px;
+    align-self: center;
+
+
+  }
+
+  .center-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
 }

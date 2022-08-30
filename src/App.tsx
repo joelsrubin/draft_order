@@ -64,14 +64,14 @@ function App() {
     <>
       <h3 className="nav">2022 BBSFFL FANTASY FOOTBALL DRAFT ORDER</h3>
       <h3 className="small">Countdown: 0</h3>
-      <div className="center">
+      <div className="center-list">
         <ul className="list" ref={animationParent}>
           {names.map((name, i) => (
             <NamePlate name={name} idx={i} key={name} />
           ))}
         </ul>
       </div>
-      <div className="center">
+      <div className="center-list">
         <button className="random" onClick={randomize} disabled>
           Randomize!
         </button>
